@@ -13,7 +13,7 @@ public Revista(String editora,String numero,String preco,String titulo,String su
 }
 
 public Revista(String titulo,String subtitulo,String disponibilidade,Data ano,String editora){
-	super(titulo,subtitulo,disponibilidade,ano)
+	super(titulo,subtitulo,ano, disponibilidade);
 	this.editora=editora;
 }
 	/**
