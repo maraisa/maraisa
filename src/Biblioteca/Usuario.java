@@ -18,6 +18,7 @@ public class Usuario {
 		this.sobrenome=sobrenome;
 		this.cpf=cpf;
 		this.sexo=sexo;
+		this.datanasc = datanasc;
 		this.endereco= endereco;
 		this.listaemp= new ArrayList<Exemplar>();
 	}
