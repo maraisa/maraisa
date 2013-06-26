@@ -39,7 +39,7 @@ public class Usuario {
 
 		public String dadosUsuario () {
 			String usuario;
-			usuario = new String ("nome:" + this.nome + "/n sobrenome:" + this.sobrenome + "/n CPF:" + this.cpf + "/n sexo" + this.sexo + "/n Data Nascimento:" + this.datanasc + "/n Endereço:" + this.endereco);
+			usuario = new String ("nome:" + this.nome + "\n sobrenome:" + this.sobrenome + "\n CPF:" + this.cpf + "\n sexo" + this.sexo + "\n Data Nascimento:" + this.datanasc + "\n Endereço:" + this.endereco.descEnd());
 			return usuario;	
 	}
 //		/*método que retorne uma String, contendo uma descrição completa dos dados do usuário e os livros por ele emprestado*/
@@ -58,9 +58,9 @@ public class Usuario {
 	 */
 	public static void main(String[] args) {
 		
-		Usuario u = new Usuario("Derik", "Evangelista", "M", "0001", new Endereco(logradouro, nome, complemento, bairro, cep, cidade, estado, pais), new Data(5,9,1990));
+		Usuario u = new Usuario("Derik", "Evangelista", "M", "0001", new Endereco("Alexandrino", "mara","jardim","Ipê", "00000000-00", "São José dos Pinhais","Paraná", "Brasil"), new Data(5,9,2010));
 		
-		System.out.println(u.nome);
+		System.out.println(u.dadosUsuario());
 
 	}
 /* Método que adiciona exemplar emprestado*/
