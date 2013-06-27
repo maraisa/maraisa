@@ -15,6 +15,24 @@ public Artigo(String titulo,String subtitulo,Data ano,String disponibilidade,Str
 	this.universidade=universidade;
 }
 
+	public String getAutores() {
+	return autores;
+}
+public void setAutores(String autores) {
+	this.autores = autores;
+}
+public String getUniversidade() {
+	return universidade;
+}
+public void setUniversidade(String universidade) {
+	this.universidade = universidade;
+}
+public String getEditora() {
+	return editora;
+}
+public void setEditora(String editora) {
+	this.editora = editora;
+}
 	/**
 	 * @param args
 	 */

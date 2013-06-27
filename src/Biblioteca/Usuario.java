@@ -54,6 +54,62 @@ public class Usuario {
 		
 		
 		
+	public String getNome() {
+			return nome;
+		}
+
+		public void setNome(String nome) {
+			this.nome = nome;
+		}
+
+		public String getSobrenome() {
+			return sobrenome;
+		}
+
+		public void setSobrenome(String sobrenome) {
+			this.sobrenome = sobrenome;
+		}
+
+		public String getCpf() {
+			return cpf;
+		}
+
+		public void setCpf(String cpf) {
+			this.cpf = cpf;
+		}
+
+		public String getSexo() {
+			return sexo;
+		}
+
+		public void setSexo(String sexo) {
+			this.sexo = sexo;
+		}
+
+		public Endereco getEndereco() {
+			return endereco;
+		}
+
+		public void setEndereco(Endereco endereco) {
+			this.endereco = endereco;
+		}
+
+		public Data getDatanasc() {
+			return datanasc;
+		}
+
+		public void setDatanasc(Data datanasc) {
+			this.datanasc = datanasc;
+		}
+
+		public ArrayList<Exemplar> getListaemp() {
+			return listaemp;
+		}
+
+		public void setListaemp(ArrayList<Exemplar> listaemp) {
+			this.listaemp = listaemp;
+		}
+
 	/**
 	 * @param args
 	 */

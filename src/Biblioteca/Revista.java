@@ -16,6 +16,31 @@ public Revista(String titulo,String subtitulo,String disponibilidade,Data ano,St
 	super(titulo,subtitulo,ano, disponibilidade);
 	this.editora=editora;
 }
+
+	public String getEditora() {
+	return editora;
+}
+
+public void setEditora(String editora) {
+	this.editora = editora;
+}
+
+public String getNumero() {
+	return numero;
+}
+
+public void setNumero(String numero) {
+	this.numero = numero;
+}
+
+public String getPreco() {
+	return preco;
+}
+
+public void setPreco(String preco) {
+	this.preco = preco;
+}
+
 	/**
 	 * @param args
 	 */

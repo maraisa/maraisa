@@ -14,15 +14,71 @@ public class Exemplar {
 		this.disponibilidade=true;
 		this.usuario=null;
 	}
+	
 
 	/*método que permite a realização de um empréstimo do exemplar*/
 
+	
 	public boolean emprestimo (Usuario user) {
 		this.disponibilidade= false;
 		this.usuario = user;
 		user.add(this);
 		return true;
 	}
+
+	
+	public String getTitulo() {
+		return titulo;
+	}
+
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+
+	public String getSubtitulo() {
+		return subtitulo;
+	}
+
+
+	public void setSubtitulo(String subtitulo) {
+		this.subtitulo = subtitulo;
+	}
+
+
+	public Data getAno() {
+		return ano;
+	}
+
+
+	public void setAno(Data ano) {
+		this.ano = ano;
+	}
+
+
+	public boolean isDisponibilidade() {
+		return disponibilidade;
+	}
+
+
+	public void setDisponibilidade(boolean disponibilidade) {
+		this.disponibilidade = disponibilidade;
+	}
+
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+
+
+	
+
 
 
 	/* método que permite a realização da devolução do exemplar*/
@@ -34,6 +90,7 @@ public class Exemplar {
 		return disponibilidade;
 	}
 
+	
 	/* método que retorna uma String, que diz se o exemplar está emprestado ou não*/
 
 	public String emprestado(){
