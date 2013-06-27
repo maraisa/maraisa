@@ -23,13 +23,13 @@ public class Biblioteca {
 
 		exemp.devolucao();
 		System.out.println(exemp.emprestado());
-		
+		System.out.println(exemp.descricao);
 
 		
 		
 		//		exemp.emprestado();
 				
-		/*
+		
 		exemp.dispo();
 		System.out.println(exemp.dispo());
 		
@@ -48,17 +48,17 @@ public class Biblioteca {
 		
 		Exemplar l = new Livro("cassiano","aurelio","115","120","banco de dados","dados","true",new Data(26,06,2013));
 
-				System.out.println(l.emprestado());
+				System.out.println(l.descLivro);
 
-		Exemplar r= new Revista("veja","bbb","false","2013","Aurelio");
+		Exemplar r = new Revista("veja","dados","false",new Data(26,06,2013),"abril");
 
-		System.out.println(r.emprestado());
+		System.out.println(r.descRevista());
 
-		Exemplar a=new Artigo("Sistema de dados","dados","2013","false","Wel");
+		Exemplar a=new Artigo("caras","Fofocas",new Data(25,12,2012),"false","Ana","Ufpr");
 
-		System.out.println(a.emprestado());
+		System.out.println(a.descArtigo());
 
-*/
+
 
 	}
 
